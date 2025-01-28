@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./styles.css";
 const ProfileForm = ({ saveProfile }) => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -65,7 +65,19 @@ const ProfileForm = ({ saveProfile }) => {
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />
-      <input type="file" accept="image/*" onChange={handleImageUpload} />
+      <input
+        type="file"
+        accept="image/*"
+        onChange={handleImageUpload}
+      />
+      
+      {/* Image preview */}
+      {image && (
+        <div className="image-preview">
+          <img src={image} alt="Profile Preview" />
+        </div>
+      )}
+
       <button type="submit">Save Profile</button>
     </form>
   );

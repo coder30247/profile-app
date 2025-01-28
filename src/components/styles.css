@@ -1,0 +1,118 @@
+/* General body styling */
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: #f7f7f7;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: flex-start; /* Align left */
+	align-items: flex-start; /* Align to the top */
+	height: 100vh;
+	padding-left: 50px; /* Space from left side */
+  }
+  
+  /* Main container for the form */
+  .app {
+	background-color: white;
+	padding: 30px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 800px; /* Larger form size */
+	overflow: hidden;
+  }
+  
+  /* Form styling */
+  .profile-form {
+	display: flex;
+	flex-direction: column;
+	gap: 25px; /* Increased space between elements */
+	width: 100%;
+  }
+  
+  /* Styling for input fields */
+  .profile-form input,
+  .profile-form textarea {
+	padding: 16px; /* Larger padding */
+	font-size: 18px; /* Bigger text */
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	background-color: #fafafa;
+	width: 100%;
+	box-sizing: border-box;
+	transition: all 0.3s ease;
+  }
+  
+  /* Allow textarea to grow dynamically with content */
+  .profile-form textarea {
+	min-height: 120px; /* Increased minimum height */
+	resize: vertical; /* Allow resizing vertically */
+  }
+  
+  /* Focus effect */
+  .profile-form input:focus,
+  .profile-form textarea:focus {
+	border-color: #007bff;
+	outline: none;
+  }
+  
+  /* Button styling */
+  .profile-form button {
+	background-color: #007bff;
+	color: white;
+	padding: 16px;
+	font-size: 18px; /* Bigger font size */
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	width: 100%; /* Full width */
+  }
+  
+  .profile-form button:hover {
+	background-color: #0056b3;
+  }
+  
+  /* File input styling */
+  .profile-form input[type="file"] {
+	padding: 12px;
+	border: 1px solid #ddd;
+	background-color: #fafafa;
+	border-radius: 8px;
+	cursor: pointer;
+  }
+  
+  .profile-form input[type="file"]:hover {
+	background-color: #f1f1f1;
+  }
+  
+  /* Image preview styling */
+  .image-preview {
+	margin-top: 20px;
+	display: flex;
+	justify-content: flex-start; /* Align image to the left */
+	align-items: center;
+  }
+  
+  .image-preview img {
+	width: 150px; /* Bigger preview */
+	height: 150px;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 2px solid #ddd;
+  }
+  
+  /* Styling for error or warning messages */
+  .profile-form p {
+	font-size: 14px;
+	color: #d9534f;
+  }
+  
+  /* Spacing for inputs */
+  .profile-form input,
+  .profile-form textarea,
+  .profile-form button,
+  .profile-form input[type="file"] {
+	margin-bottom: 20px; /* Increased bottom margin */
+  }
+  
